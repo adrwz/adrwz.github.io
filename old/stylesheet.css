@@ -1,0 +1,365 @@
+@font-face {
+    font-family: leaguegothic;
+    src: url(fonts/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserratbold;
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #17222B;
+}
+
+p {
+    font-family: montserrat;
+    font-size: 14px;
+}
+
+.jumbotron {}
+
+.undraggable {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.jumbotron-img {
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+    position: absolute;
+    top: -100px;
+    /*Adjust this via JS*/
+    z-index: 0;
+}
+
+.jumbotron-hello {
+    font-family: leaguegothic;
+    color: #F8E3E3;
+    font-size: 260px;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.jumbotron-intro {
+    font-family: leaguegothic;
+    color: #D13F41;
+    font-size: 64px;
+    z-index: 1;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.body {
+    margin-top: 700px;
+    background-color: #D13F41;
+    position: relative;
+    z-index: 2;
+}
+
+.body-left {
+    width: 50%;
+    background-color: white;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 280px;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #D13F41;
+    position: absolute;
+    top: -100px;
+    left: 80%;
+}
+
+.body-image {
+    width: 30%;
+    margin-top: 200px;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#strip-1 {
+    width: 50%;
+    height: 150px;
+    z-index: 9;
+    position: absolute;
+    top: 129px;
+    left: 50%;
+    background-color: white;
+}
+
+#strip-2 {
+    width: 100%;
+    height: 150px;
+    z-index: 9;
+    position: absolute;
+    top: 129px;
+    background-color: #D13F41;
+}
+
+#about-title {
+    text-align: center;
+    font-family: leaguegothic;
+    font-size: 130px;
+    margin: 0px;
+    color: #19252D;
+}
+
+#about-title-2 {
+    position: absolute;
+    color: white;
+    z-index: 9;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-family: leaguegothic;
+    font-size: 280px;
+    margin: 0px;
+    top: 420px;
+}
+
+#about-header {
+    font-family: montserrat;
+    margin: 30px;
+    margin-right: 30%;
+    color: white;
+    font-size: 24px;
+}
+
+#about-header-2 {
+    font-family: montserrat;
+    font-size: 24px;
+    padding-left: 40px;
+    position: relative;
+    top: 280px;
+    color: #D13F41;
+}
+
+#about-text {
+    padding: 40px;
+    position: relative;
+    top: 280px;
+}
+
+.works-title {
+    width: 100%;
+    height: 200px;
+    background-color: #19252D;
+}
+
+.works-header {
+    font-family: leaguegothic;
+    font-size: 172px;
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+
+.works {
+    padding-bottom: 100%;
+}
+
+.strip-3 {
+    background-color: #D13F41;
+    width: 50%;
+    float: left;
+}
+
+.strip-4 {
+    background-color: white;
+    width: 50%;
+    float: left;
+}
+
+.works-item-title {
+    font-family: leaguegothic;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+.works-item-subtitle {
+    font-family: leaguegothic;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: -100px;
+    border-top: 5px solid white;
+    width: 42%;
+}
+
+.dap-subtitle {
+    margin-top: -80px !important;
+}
+
+#1-title {
+    margin-top: 100px;
+}
+
+.dap-title {
+    font-size: 80px !important;
+}
+
+.works-1 {
+    width: 100%;
+}
+
+.works-p {
+    padding: 20px;
+}
+
+.works-paragraph {
+    color: white;
+}
+
+.works-paragraph-head {
+    color: white;
+    font-family: montserratbold;
+    font-size: 24px;
+}
+
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-left: 70px solid #D13F41;
+    border-bottom: 35px solid transparent;
+    position: absolute;
+    left: 48%;
+    margin-top: -150px;
+}
+
+#surreality {
+    margin: 0px;
+}
+
+#mindspark {
+    margin-top: -100px;
+}
+
+#dap {
+    margin-top: -100px;
+}
+
+.contact-body {
+    position: relative;
+    top: -20px;
+    z-index: 11;
+}
+
+.contacts-title {
+    width: 100%;
+    height: 200px;
+    background-color: #19252D;
+    margin-top: -18px;
+}
+
+.contact {
+    background-color: white;
+    padding-bottom: 160px;
+}
+
+.contact-title {
+    margin: 0px;
+    font-family: montserratbold;
+    color: #19252D;
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    top: 30px;
+}
+
+.contact-name {
+    margin: 0px;
+    font-family: montserratbold;
+    color: black;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 15px;
+}
+
+.contact-email {
+    margin: 0px;
+    font-family: montserrat;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+hr {
+    border: 2px solid #19252D;
+}
+
+.hr-contact {
+    margin-top: 60px;
+    width: 50%;
+}
+
+.footer {
+    margin-top: -20px;
+    background-color: #D13F41;
+    height: 240px;
+}
+
+.footer-image {
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    z-index: 50;
+}
+
+.footer-thanks {
+    margin: 0px;
+    color: white;
+    font-family: leaguegothic;
+    font-size: 72px;
+    position: relative;
+    top: 140px;
+    text-align: center;
+}
+
+.footer-bar {
+    height: 50px;
+    background-color: #BA3036;
+}
+
+.footer-bar-text1 {
+    float: left;
+    color: #D13F41;
+    margin-left: 30px;
+}
+
+.footer-bar-text2 {
+    float: right;
+    color: #D13F41;
+    margin-right: 30px;
+}
