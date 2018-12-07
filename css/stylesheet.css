@@ -48,6 +48,46 @@ body {
   color: #bbb;
 }
 
+.gallery {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: -100px;
+}
+
+.item {
+  width: 30%;
+  margin: 1.66%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.item-img {
+  width: 100%;
+}
+
+.item-title {
+  font-weight: 100;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.item-subtitle {
+  font-weight: 400;
+  color: gray;
+  font-size: 12px;
+  margin-top: -30px;
+}
+
+.item-link {
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: none;
+  color: #225EE3;
+}
+
+.item-link:visited {
+  color: #225EE3;
+}
 
 
 
@@ -69,9 +109,6 @@ body {
 
 
 
-
-
-
-p {
+.item-animated {
 
 }
