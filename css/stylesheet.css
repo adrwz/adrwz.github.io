@@ -5,10 +5,15 @@ body {
   padding: 0px;
 }
 
+.highlight {
+  background-color: black;
+  color: white !important;
+}
+
 .header {
   text-align: center;
   font-weight: 0;
-  margin-top: -80px;
+  margin-top: -50px;
   font-size: 64px;
 }
 
@@ -41,9 +46,29 @@ body {
   margin: 20px;
 }
 
+.link.hover:hover {
+  background-color: #000;
+  color: #fff;
+  animation-name: link-hover;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+
+@keyframes link-hover {
+  0% {
+    background-color: #fff;
+    color: #000;
+  }
+
+  100% {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
 .filter-div {
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
+  border-top: 1px solid lightgray;
   display: inline;
   padding: 10px;
   margin-right: 10px;
@@ -62,11 +87,12 @@ body {
 }
 
 .filter.active {
-  color: #aaa;
+  background-color: #555;
+  color: #fff;
 }
 
 .filter.active:hover {
-  color: #bbb;
+  color: #eee;
 }
 
 .gallery {
@@ -151,7 +177,7 @@ body {
 }
 
 .item:active {
-  background-color: black;
+  fill: red;
 }
 
 .item-img {
