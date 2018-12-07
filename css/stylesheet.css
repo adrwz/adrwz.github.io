@@ -22,16 +22,35 @@ body {
   color: gray;
   font-size: 16px;
   margin-top: -20px;
+  font-family: 'Lato';
+}
+
+.link-div {
+  text-align: center;
+  margin-top: 50px;
+  width: 60%;
+  margin-left: 20%;
+  line-height: 50px;
+}
+
+.link {
+  color: #222;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 20px;
 }
 
 .filter-div {
-  text-align: center;
-  margin-top: 50px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  display: inline;
+  padding: 10px;
+  margin-right: 10px;
 }
 
 .filter {
-  color: #555;
-  font-weight: 700;
+  color: #888;
+  font-weight: 400;
   text-decoration: none;
   margin: 20px;
 }
@@ -49,8 +68,8 @@ body {
 }
 
 .gallery {
-  width: 70%;
   margin-left: 15%;
+  margin-right: 15%;
   margin-top: -100px;
 }
 
@@ -76,6 +95,7 @@ body {
   color: gray;
   font-size: 12px;
   margin-top: -30px;
+  font-family: 'Lato';
 }
 
 .item-link {
