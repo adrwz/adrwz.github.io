@@ -15,7 +15,8 @@
     <!-- Stylesheet -->
     <link href="css/stylesheet.css" rel="stylesheet">
 
-    <!-- Material Icons -->
+    <!-- Javascript -->
+    <script src="isotope.pkgd.min.js"></script>
   </head>
 
   <body>
@@ -27,10 +28,10 @@
         <a href="#" class="link">Home</a>
       <div class="filter-div">
         <a class="link">Filter:</a>
-        <a href="#all" id="all" class="filter active">All</a>
-        <a href="#biz" id="biz" class="filter">Business</a>
-        <a href="#code" id="code" class="filter">Programming</a>
-        <a href="#art" id="art" class="filter">Art</a>
+        <a id="all" class="filter active">All</a>
+        <a id="biz" class="filter">Business</a>
+        <a id="code" class="filter">Programming</a>
+        <a id="art" class="filter">Art</a>
       </div>
       <a href="#" class="link">About</a>
       <a href="resume.pdf" class="link">Resume</a>
@@ -139,6 +140,10 @@
     <script type="text/javascript">
       $("#all").click(function() {
         $(".item").css("display", "block");
+        $(".item").css("opacity", "0");
+        $(".item").animate({
+          opacity: 1,
+        });
         $("#all").addClass("active");
         $("#biz").removeClass("active");
         $("#code").removeClass("active");
@@ -148,6 +153,10 @@
         $(".code").css("display", "none");
         $(".art").css("display", "none");
         $(".biz").css("display", "block");
+        $(".biz").css("opacity", "0");
+        $(".biz").animate({
+          opacity: 1,
+        });
         $("#all").removeClass("active");
         $("#biz").addClass("active");
         $("#code").removeClass("active");
@@ -157,6 +166,10 @@
         $(".art").css("display", "none");
         $(".biz").css("display", "none");
         $(".code").css("display", "block");
+        $(".code").css("opacity", "0");
+        $(".code").animate({
+          opacity: 1,
+        });
         $("#all").removeClass("active");
         $("#biz").removeClass("active");
         $("#code").addClass("active");
@@ -166,6 +179,10 @@
         $(".code").css("display", "none");
         $(".biz").css("display", "none");
         $(".art").css("display", "block");
+        $(".art").css("opacity", "0");
+        $(".art").animate({
+          opacity: 1,
+        });
         $("#all").removeClass("active");
         $("#biz").removeClass("active");
         $("#code").removeClass("active");
@@ -174,6 +191,14 @@
 
       $(".item").click(function() {
         $(this).addClass("item-animation");
+      });
+
+      $(".item").hover(function() {
+        $(this).removeClass("item-hover-2");
+        $(this).addClass("item-hover-1");
+      }, function() {
+        $(this).removeClass("item-hover-1");
+        $(this).addClass("item-hover-2");
       });
     </script>
   </body>

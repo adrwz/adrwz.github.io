@@ -5,12 +5,6 @@ body {
   padding: 0px;
 }
 
-.bar {
-  width: 100%;
-  height: 20px;
-  background-color: black;
-}
-
 .header {
   text-align: center;
   font-weight: 0;
@@ -21,7 +15,6 @@ body {
 .header-icon {
   text-align: center;
   font-weight: 700;
-  margin-top: 100px;
   font-size: 72px;
 }
 
@@ -61,6 +54,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   margin: 20px;
+  cursor: pointer;
 }
 
 .filter:hover {
@@ -94,6 +88,50 @@ body {
   cursor: pointer;
 }
 
+.item-hover-1 {
+  opacity: 0.8;
+  position: relative;
+  top: -5px;
+  animation-name: item-hover-1;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-duration: .5s;
+}
+
+@keyframes item-hover-1 {
+  0% {
+    opacity: 1;
+    top: 0px;
+  }
+
+  100% {
+    opacity: 0.8;
+    top: -5px;
+  }
+}
+
+.item-hover-2 {
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  animation-name: item-hover-2;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-duration: .25s;
+}
+
+@keyframes item-hover-2 {
+  0% {
+    opacity: 0.8;
+    top: -5px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
 .item-animation {
   opacity: 0.2;
   animation-name: item-animation;
@@ -110,6 +148,10 @@ body {
   100% {
     opacity: 0.2;
   }
+}
+
+.item:active {
+  background-color: black;
 }
 
 .item-img {
