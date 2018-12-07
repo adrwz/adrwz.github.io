@@ -1,6 +1,14 @@
 body {
   background-color: white;
   font-family: 'Miriam Libre';
+  margin: 0px;
+  padding: 0px;
+}
+
+.bar {
+  width: 100%;
+  height: 20px;
+  background-color: black;
 }
 
 .header {
@@ -73,11 +81,35 @@ body {
   margin-top: -100px;
 }
 
+.item-wrapper {
+  text-decoration: none;
+  color: black;
+}
+
 .item {
   width: 30%;
   margin: 1.66%;
   float: left;
   margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.item-animation {
+  opacity: 0.2;
+  animation-name: item-animation;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-duration: .5s;
+}
+
+@keyframes item-animation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
 }
 
 .item-img {

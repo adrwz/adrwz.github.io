@@ -27,10 +27,10 @@
         <a href="#" class="link">Home</a>
       <div class="filter-div">
         <a class="link">Filter:</a>
-        <a href="#all" class="filter active">All</a>
-        <a href="#biz" class="filter">Business</a>
-        <a href="#code" class="filter">Programming</a>
-        <a href="#art" class="filter">Art</a>
+        <a href="#all" id="all" class="filter active">All</a>
+        <a href="#biz" id="biz" class="filter">Business</a>
+        <a href="#code" id="code" class="filter">Programming</a>
+        <a href="#art" id="art" class="filter">Art</a>
       </div>
       <a href="#" class="link">About</a>
       <a href="resume.pdf" class="link">Resume</a>
@@ -46,78 +46,135 @@
     <!-- Gallery -->
     <div class="gallery">
       <div class="row">
-        <div class="item" id="all biz code">
-          <img src="images/mindspark/thumbnail.png" class="item-img"/>
-          <h5 class="item-title">Mindspark Summer</h5>
-          <p class="item-subtitle">Singlehandedly generated $53,000 in revenue over two years.</p>
-          <a href="items/mindspark.html" class="item-link">Learn More</a>
-        </div>
+        <a href="items/mindspark.html" class="item-wrapper">
+          <div class="item biz code">
+            <img src="images/mindspark/thumbnail.png" class="item-img"/>
+            <h5 class="item-title">Mindspark Summer</h5>
+            <p class="item-subtitle">Singlehandedly generated $53,000 in revenue over two years.</p>
+            <a href="items/mindspark.html" class="item-link">Learn More</a>
+          </div>
+        </a>
+        <a href="items/quickey.html" class="item-wrapper">
+          <div class="item code">
+            <img src="images/quickey/thumbnail.png" class="item-img"/>
+            <h5 class="item-title">Quickey</h5>
+            <p class="item-subtitle">Front-end developer for productivity chrome extension with 300,000+ uses.</p>
+            <a href="items/quickey.html" class="item-link">Learn More</a>
+          </div>
+        </a>
 
-        <div class="item" id="all code">
-          <img src="images/quickey/thumbnail.png" class="item-img"/>
-          <h5 class="item-title">Quickey</h5>
-          <p class="item-subtitle">Front-end developer for productivity chrome extension with 300,000+ uses.</p>
-          <a href="items/quickey.html" class="item-link">Learn More</a>
-        </div>
-
-        <div class="item" id="all biz">
-          <img src="images/lahacks/thumbnail.png" class="item-img"/>
-          <h5 class="item-title">LA Hacks</h5>
-          <p class="item-subtitle">Marketing team for one of largest hackathons with 1,000+ hackers/year.</p>
-          <a href="items/lahacks.html" class="item-link">Learn More</a>
-        </div>
+        <a href="items/lahacks.html" class="item-wrapper">
+          <div class="item biz">
+            <img src="images/lahacks/thumbnail.png" class="item-img"/>
+            <h5 class="item-title">LA Hacks</h5>
+            <p class="item-subtitle">Marketing team for one of largest hackathons with 1,000+ hackers/year.</p>
+            <a href="items/lahacks.html" class="item-link">Learn More</a>
+          </div>
+        </a>
       </div>
 
 
       <div class="row">
-        <div class="item" id="all biz code">
-          <img src="images/tutorfly/thumbnail.png" class="item-img"/>
-          <h5 class="item-title">Tutorfly</h5>
-          <p class="item-subtitle">Software intern for San Diego startup focused on peer-to-peer tutoring.</p>
-          <a href="items/tutorfly.html" class="item-link">Learn More</a>
-        </div>
+        <a href="items/tutorfly.html" class="item-wrapper">
+          <div class="item biz code">
+            <img src="images/tutorfly/thumbnail.png" class="item-img"/>
+            <h5 class="item-title">Tutorfly</h5>
+            <p class="item-subtitle">Software intern for San Diego startup focused on peer-to-peer tutoring.</p>
+            <a href="items/tutorfly.html" class="item-link">Learn More</a>
+          </div>
+        </a>
 
-        <div class="item" id="all code">
-          <img src="images/surreality/thumbnail.png" class="item-img"/>
-          <h5 class="item-title">Surreality iOS</h5>
-          <p class="item-subtitle">Developed beautiful puzzle game with 200+ levels and 250+ downloads.</p>
-          <a href="items/surreality.html" class="item-link">Learn More</a>
-        </div>
+        <a href="items/surreality.html" class="item-wrapper">
+          <div class="item code">
+            <img src="images/surreality/thumbnail.png" class="item-img"/>
+            <h5 class="item-title">Surreality iOS</h5>
+            <p class="item-subtitle">Developed beautiful puzzle game with 200+ levels and 250+ downloads.</p>
+            <a href="items/surreality.html" class="item-link">Learn More</a>
+          </div>
+        </a>
 
-        <div class="item" id="all code">
-          <img src="images/membershipapp/thumbnail.png" class="item-img"/>
-          <h5 class="item-title">Membership Application</h5>
-          <p class="item-subtitle">Developed membership app storing/updating users; won 1st at FBLA States.</p>
-          <a href="items/lahacks.html" class="item-link">Learn More</a>
-        </div>
+        <a href="items/membershipapp.html" class="item-wrapper">
+          <div class="item code">
+            <img src="images/membershipapp/thumbnail.png" class="item-img"/>
+            <h5 class="item-title">Membership Application</h5>
+            <p class="item-subtitle">Developed membership app storing/updating users; won 1st at FBLA States.</p>
+            <a href="items/membershipapp.html" class="item-link">Learn More</a>
+          </div>
+        </a>
       </div>
 
 
 
       <div class="row">
-        <div class="item" id="all art code">
-          <img src="images/design/1.png" class="item-img"/>
-          <h5 class="item-title">Design</h5>
-          <p class="item-subtitle">Result of 4+ years of design experience.</p>
-          <a href="items/design.html" class="item-link">View Portfolio</a>
-        </div>
+        <a href="items/design.html" class="item-wrapper">
+          <div class="item art code">
+            <img src="images/design/1.png" class="item-img"/>
+            <h5 class="item-title">Design</h5>
+            <p class="item-subtitle">Result of 4+ years of design experience.</p>
+            <a href="items/design.html" class="item-link">View Portfolio</a>
+          </div>
+        </a>
 
-        <div class="item" id="all art">
-          <img src="images/charcoal/1.jpg" class="item-img"/>
-          <h5 class="item-title">Charcoal Drawings</h5>
-          <p class="item-subtitle">Result of 12+ years of art experience.</p>
-          <a href="items/charcoal.html" class="item-link">View Portfolio</a>
-        </div>
+        <a href="items/charcoal.html" class="item-wrapper">
+          <div class="item art">
+            <img src="images/charcoal/1.jpg" class="item-img"/>
+            <h5 class="item-title">Charcoal Drawings</h5>
+            <p class="item-subtitle">Result of 12+ years of art experience.</p>
+            <a href="items/charcoal.html" class="item-link">View Portfolio</a>
+          </div>
+        </a>
 
-        <div class="item" id="all art">
-          <img src="images/oil/1.jpg" class="item-img"/>
-          <h5 class="item-title">Oil Paintings</h5>
-          <p class="item-subtitle">Result of 12+ years of art experience.</p>
-          <a href="items/oil.html" class="item-link">View Portfolio</a>
-        </div>
+        <a href="items/oil.html" class="item-wrapper">
+          <div class="item art">
+            <img src="images/oil/1.jpg" class="item-img"/>
+            <h5 class="item-title">Oil Paintings</h5>
+            <p class="item-subtitle">Result of 12+ years of art experience.</p>
+            <a href="items/oil.html" class="item-link">View Portfolio</a>
+          </div>
+        </a>
       </div>
     </div>
-  </div>
 
+    <script src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+      $("#all").click(function() {
+        $(".item").css("display", "block");
+        $("#all").addClass("active");
+        $("#biz").removeClass("active");
+        $("#code").removeClass("active");
+        $("#art").removeClass("active");
+      });
+      $("#biz").click(function() {
+        $(".code").css("display", "none");
+        $(".art").css("display", "none");
+        $(".biz").css("display", "block");
+        $("#all").removeClass("active");
+        $("#biz").addClass("active");
+        $("#code").removeClass("active");
+        $("#art").removeClass("active");
+      });
+      $("#code").click(function() {
+        $(".art").css("display", "none");
+        $(".biz").css("display", "none");
+        $(".code").css("display", "block");
+        $("#all").removeClass("active");
+        $("#biz").removeClass("active");
+        $("#code").addClass("active");
+        $("#art").removeClass("active");
+      });
+      $("#art").click(function() {
+        $(".code").css("display", "none");
+        $(".biz").css("display", "none");
+        $(".art").css("display", "block");
+        $("#all").removeClass("active");
+        $("#biz").removeClass("active");
+        $("#code").removeClass("active");
+        $("#art").addClass("active");
+      });
+
+      $(".item").click(function() {
+        $(this).addClass("item-animation");
+      });
+    </script>
   </body>
 </html>
