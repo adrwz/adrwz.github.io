@@ -119,7 +119,6 @@ body {
 }
 
 .item-hover-1 {
-  opacity: 0.8;
   position: relative;
   top: -5px;
   animation-name: item-hover-1;
@@ -130,18 +129,15 @@ body {
 
 @keyframes item-hover-1 {
   0% {
-    opacity: 1;
     top: 0px;
   }
 
   100% {
-    opacity: 0.8;
     top: -5px;
   }
 }
 
 .item-hover-2 {
-  opacity: 1;
   position: relative;
   top: 0px;
   animation-name: item-hover-2;
@@ -152,12 +148,10 @@ body {
 
 @keyframes item-hover-2 {
   0% {
-    opacity: 0.8;
     top: -5px;
   }
 
   100% {
-    opacity: 1;
     top: 0px;
   }
 }
@@ -226,7 +220,7 @@ body {
 .back {
   text-decoration: none;
   color: black;
-  position: absolute;
+  position: fixed;
   top: 30px;
   left: 30px;
   font-size: 24px;
@@ -253,11 +247,122 @@ body {
   }
 }
 
+.page-wrapper {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: -75px;
+}
+
+.page-icon {
+  width: 10%;
+  margin-left: 45%;
+  margin-top: 75px;
+}
+
 .page-header {
   text-align: center;
   font-weight: 0;
   font-size: 64px;
-  margin-top: 100px;
+  margin-top: 25px;
+}
+
+.page-subheader {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.page-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #225EE3;
+  font-family: 'Lato';
+}
+
+.page-subsubheader {
+  font-size: 28px;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  width: max-content;
+}
+
+.page-paragraph {
+  font-size: 20px;
+  font-family: 'Lato';
+  text-indent: 5em;
+  font-weight: 100;
+}
+
+.page-bold {
+  font-weight: 400;
+}
+
+.page-headerImg {
+  width: 100%;
+}
+
+.page-headerImg.stacked4 {
+  width: 24%;
+  margin: 0.5%;
+  float: left;
+}
+
+.page-headerImg.stacked5 {
+  width: 19%;
+  margin: 0.5%;
+  float: left;
+}
+
+.page-img {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.page-stacked2 {
+  margin-left: 20%;
+}
+
+.page-img.stacked2 {
+  width: 36%;
+  margin: 1%;
+  float: left;
+}
+
+.page-img.thin {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.page-p-link {
+  text-decoration: none;
+  color: #225EE3;
+}
+
+.page-p-link:hover {
+  color: white;
+  background-color: #58C2D9;
+  animation-name: link-animation;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+
+@keyframes link-animation {
+  0% {
+    color: #225EE3;
+    background-color: white;
+  }
+
+  100% {
+    color: white;
+    background-color: #58C2D9;
+  }
 }
 
 .page.item:hover {
