@@ -213,6 +213,66 @@ body {
 
 
 
+.about-img {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: -50px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.about-paragraph {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.about-spacing {
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+
+.contact-link-wrapper {
+  text-align: center;
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: white;
+  background-color: #58C2D9;
+  animation-name: link-animation;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-duration: .3s;
+}
+
+.contact-link:visited {
+  text-decoration: none;
+}
+
+.contact-spacing {
+  height: 300px;
+}
+
+
+
+
+
+
+
 
 
 
