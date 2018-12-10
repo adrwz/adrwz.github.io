@@ -284,6 +284,7 @@ body {
   top: 30px;
   left: 30px;
   font-size: 24px;
+  background-color: white;
 }
 
 .back:hover {
@@ -443,13 +444,28 @@ body {
 
 
 
+@media screen and (max-width: 650px) {
+  .link-div {
+    width: 100%;
+    margin: 0%;
+  }
 
+  .gallery {
+    margin: 0%;
+  }
 
+  .page-img {
+    margin: 0%;
+    width: 100%;
+  }
 
+  .page-wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-
-
-
-.item-animated {
-
+  .back {
+    top: 10px;
+    left: 10px;
+  }
 }
